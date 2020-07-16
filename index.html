@@ -2,13 +2,703 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Document</title>
-<link rel="stylesheet/less" type="text/css" href="styles.less" />
-<script src="less.js/dist/less.min.js" type="text/javascript"></script>
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="test">456</div>
+  <!-- navbar -->
+    <nav class="navbar-expand-lg navbar-light">
+          <img src="image/me.jpg" class="circle">
+        <p>Nicole Lin<br><span class="job-title">UI/UX Designer</span></p>
+        <a href="mailto:vup0118@gmail.com">
+        <button class="contact-me">CONTACT ME</button></a>
+      	<ul class="nav nav-tab2" id="myTab">
+          <li>
+            <a class="nav-item nav-link" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false"><span class="li-text">ABOUT ME</span></a>
+          </li>
+          <li class="">
+            <a class="nav-link nav-item" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false"><span class="li-text">EXPERIENCE</span></a>
+          </li>
+          <li class="">
+            <a class="nav-link nav-item active" data-toggle="tab" href="#collection" role="tab" aria-controls="collection" aria-selected="true"><span class="li-text">WORK COLLECTIONS</span></a>
+          </li>
+        </ul>
+    </nav>
+  <!-- Tab panes -->
+    <div class="tab-content main">
+      <!-- First Tab -->
+        <div class="tab-pane content show" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <h1>ABOUT ME</h1>
+<!--             <div class="photo">
+              <img src="image/me.jpg">
+            </div> -->
+            <div class="name-info">
+              <p>姓名: 林婷馨(Nicole Lin)</p>
+              <p>年齡: 27</p>
+              <p>職業: UI/UX設計師</p>
+            </div>
+            <div class="intro">
+              <p>我求學時期主修國際貿易系，副修商業設計，畢業後決定朝向設計業發展。出社會後第一份工作擔任UI/UX設計師，在工作中獲取新知、熟悉各種設計規範，也自學網頁語法，增強這塊領域必備技能的實力。出社會至今四年多，一直在這塊領域積極發展，除了正職工作外，也在閒暇時間接外包，增進更多實務經驗。
+              </p>
+            </div>
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>Skill</h2></div>
+            </div>
+            <div class="skill-content">
+              <li>熟悉iOS、Android設計規範。</li>
+              <li>製作UI Flow、Mockup、Prototype、UI guideline文件。</li>
+              <li>HTML、CSS、LESS程式語法，製作RWD網頁。</li>
+              <li>平面、視覺設計。</li>
+              <img src="image/sketch.png" class="skill-img">
+              <img src="image/photoshop.png" class="skill-img">
+              <img src="image/illustrator.png" class="skill-img">
+              <img src="image/zeplin.png" class="skill-img">
+              <img src="image/invision.png" class="skill-img">
+            </div>
+        </div>
+        <!-- Second Tab -->
+        <div class="tab-pane show content" id="work" role="tabpanel" aria-labelledby="work-tab">
+            <h1>WORK EXPERINCE</h1>
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>Latticework inc.</h2></div>
+            </div>
+            <div class="skill-content ex-div">
+              <li>2017.10 - 至今<span>UI / UX Designer</span></li>
+              <p class="li-list">- NAS平台設計與網頁維護，撰寫HTML、CSS、Less。</p>
+              <p class="li-list">- iOS、Android、Desktop APP介面設計。</p>
+              <p class="li-list">- UX Flow設計。</p>
+              <p class="li-list">- DM、Banner、Icons等視覺設計。</p>
+            </div>
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>MAYO Human capital Inc.</h2></div>
+            </div>
+            <div class="skill-content ex-div">
+              <li>2017.04 - 2017.10<span>UI / UX Designer</span></li>
+              <p class="li-list">- iOS、Android APP介面設計。</p>
+              <p class="li-list">- 人力資源平台設計。</p>
+              <p class="li-list">- 公司CI設計。</p>
+            </div>
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>Polstar Technology Inc.</h2></div>
+            </div>
+            <div class="skill-content ex-div">
+              <li>2015.07 - 2017.04<span>UI / UX Designer</span></li>
+              <p class="li-list">- iOS、Android APP介面設計。</p>
+              <p class="li-list">- 車用導航介面設計。</p>
+              <p class="li-list">- RWD活動網頁製作、軟體更新網頁製作。</p>
+              <p class="li-list">- Banner、海報、DM、節慶卡片等視覺設計。</p>
+              <li class="ex-div">2017.04 - 2018.03<span>UI / UX Designer(外包接案)</span></li>
+              <p class="li-list">- 車用導航介面設計。</p>
+              <p class="li-list">- 軟體更新網頁製作。</p>
+            </div>
+        
+        </div>
+        <div class="tab-pane content show in active" id="collection" role="tabpanel" aria-labelledby="collection-tab">
+            <h1>WORK COLLECTIONS</h1>
+            <!-- Desktop ui -->
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>Desktop App</h2></div>
+            </div>
+            <div class="collection-images">
+                <div class="collection-img" data-toggle="modal" data-target="#myModal1">
+                    <div class="collection-div">
+                      <img src="image/welcome-page.png">
+                    </div>                  
+                </div>
+                <div class="collection-img" data-toggle="modal" data-target="#myModal2">
+                    <div class="collection-div">
+                      <img src="image/desktop.png">
+                    </div>                  
+                </div>   
+                <div class="collection-img" data-toggle="modal" data-target="#myModal3">
+                    <div class="collection-div">
+                      <img src="image/initial.png">
+                    </div>                  
+                </div>                                                          
+            </div>
+            <!-- Mobile app design -->
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>Mobile App</h2></div>
+            </div>
+            <div class="collection-images">
+              <div class="collection-img" data-toggle="modal" data-target="#myModal1">
+                <div class="collection-div">
+                  <img src="image/tube-app.png">
+                </div>
+              </div>   
+              <div class="collection-img" data-toggle="modal" data-target="#myModal2">
+                <div class="collection-div">
+                  <img src="image/am-manager.png">
+                </div>
+              </div>  
+              <div class="collection-img" data-toggle="modal" data-target="#polnavapp">
+                <div class="collection-div">
+                  <img src="image/polnav-app.png">
+                </div>
+              </div>  
+              <div class="collection-img" data-toggle="modal" data-target="#surveillance">
+                <div class="collection-div">
+                  <img src="image/surveillance.png">
+                </div>
+              </div>   
+              <div class="collection-img" data-toggle="modal" data-target="#fastrailway">
+                <div class="collection-div">
+                  <img src="image/fastrailway.png">
+                </div>
+              </div>    
+              <div class="collection-img" data-toggle="modal" data-target="#bridge">
+                <div class="collection-div">
+                  <img src="image/bridge.png">
+                </div>
+              </div>                                                                       
+            </div>
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>Web Design</h2></div>
+            </div>
+            <div class="collection-images">
+              <div class="collection-img" data-toggle="modal" data-target="#tuberwd">
+                <div class="collection-div">
+                  <img src="image/tube-rwd.png">
+                </div>
+              </div> 
+              <div class="collection-img" data-toggle="modal" data-target="#mappapaya">
+                <div class="collection-div">
+                  <img src="image/map-papaya.png">
+                </div>
+              </div>  
+              <div class="collection-img" data-toggle="modal" data-target="#mapsd">
+                <div class="collection-div">
+                  <img src="image/map-sd.png">
+                </div>
+              </div> 
+              <div class="collection-img" data-toggle="modal" data-target="#mapsaipa">
+                <div class="collection-div">
+                  <img src="image/map-saipa.png">
+                </div>
+              </div>
+              <div class="collection-img" data-toggle="modal" data-target="#mappolnav">
+                <div class="collection-div">
+                  <img src="image/map-polnav.png">
+                </div>
+              </div> 
+              <div class="collection-img" data-toggle="modal" data-target="#errorpage">
+                <div class="collection-div">
+                  <img src="image/404-page.png">
+                </div>
+              </div>
+              <div class="collection-img" data-toggle="modal" data-target="#activity">
+                <div class="collection-div">
+                  <img src="image/polnav-activity.png">
+                </div>
+              </div>  
+              <div class="collection-img" data-toggle="modal" data-target="#railwayweb">
+                <div class="collection-div">
+                  <img src="image/railway-web.png">
+                </div>
+              </div>                                        
+            </div>                                                                       
+            <!-- Material design -->
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>Material Design</h2></div>
+            </div>
+            <div class="collection-images">
+              <div class="collection-img" data-toggle="modal" data-target="#qig">
+                <div class="collection-div">
+                  <img src="image/qig.png">
+                </div>
+              </div>
+              <div class="collection-img" data-toggle="modal" data-target="#ppt">
+                <div class="collection-div">
+                  <img src="image/ppt.png">
+                </div>
+              </div> 
+              <div class="collection-img" data-toggle="modal" data-target="#banner">
+                <div class="collection-div">
+                  <img src="image/banner.png">
+                </div>
+              </div>
+              <div class="collection-img" data-toggle="modal" data-target="#festival">
+                <div class="collection-div">
+                  <img src="image/festival-card.png">
+                </div>
+              </div>  
+              <div class="collection-img" data-toggle="modal" data-target="#adbanner">
+                <div class="collection-div">
+                  <img src="image/ad-banner.png">
+                </div>
+              </div>  
+              <div class="collection-img" data-toggle="modal" data-target="#linesticker">
+                <div class="collection-div">
+                  <img src="image/line-sticker.png">
+                </div>
+              </div> 
+              <div class="collection-img" data-toggle="modal" data-target="#wallpaper">
+                <div class="collection-div">
+                  <img src="image/wall-paper.png">
+                </div>
+              </div>                                                                                        
+            </div>    
+            <!-- Icon design -->
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>Icon Design</h2></div>
+            </div>
+            <div class="collection-images">
+              <div class="collection-img" data-toggle="modal" data-target="#tubeicon">
+                <div class="collection-div">
+                  <img src="image/tube-icon.png">
+                </div>
+              </div>
+              <div class="collection-img" data-toggle="modal" data-target="#polstaricon">
+                <div class="collection-div">
+                  <img src="image/polstar-icon.png">
+                </div>
+              </div>                   
+            </div>                    
+            <!-- Other device UI -->
+            <div class="title">
+              <!-- <div class="color-block"></div> -->
+              <div class="block-text"><h2>Other Device</h2></div>
+            </div>
+            <div class="collection-images">
+              <div class="collection-img" data-toggle="modal" data-target="#carnavi">
+                <div class="collection-div">
+                  <img src="image/car-navi.png">
+                </div>
+              </div>   
+              <div class="collection-img" data-toggle="modal" data-target="#auto">
+                <div class="collection-div">
+                  <img src="image/polnav-auto.png">
+                </div>
+              </div>                 
+            </div>            
+            <!-- dialog img -->
+            <div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+                  <div class="btn btn-next"><img src="image/chevron-right.png"></div>        
+                  <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/welcome-page.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="qig" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+                  <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/qig.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>                   
+            <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+                  <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/desktop.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+                  <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/initial.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+                  <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/tube-app.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="modal" id="carnavi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+                  <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/car-navi.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>                                                
+            <div class="modal" id="tuberwd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/tube-rwd.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <div class="modal" id="ppt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/ppt.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="modal" id="tubeicon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/tube-icon.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="modal" id="mappapaya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/map-papaya.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>     
+            <div class="modal" id="mapsd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/map-sd.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="modal" id="mapsaipa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/map-saipa.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="modal" id="mappolnav" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/map-polnav.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="errorpage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/404-page.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="banner" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/banner.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="modal" id="polstaricon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/polstar-icon.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="activity" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/polnav-activity.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>     
+            <div class="modal" id="festival" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/festival-card.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>                                                
+            <div class="modal" id="auto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/polnav-auto.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/am-manager.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <div class="modal" id="adbanner" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/ad-banner.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="modal" id="polnavapp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/polnav-app.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="modal" id="surveillance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/surveillance.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <div class="modal" id="fastrailway" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/fastrailway.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <div class="modal" id="bridge" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/bridge.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="modal" id="linesticker" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/line-sticker.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="modal" id="railwayweb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/railway-web.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="modal" id="wallpaper" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="btn btn-prev"><img src="image/chevron-left.png"></div>
+              <div class="btn btn-next"><img src="image/chevron-right.png"></div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="image/wall-paper.png">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>                                                                                                           
+        </div>
+    </div>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $("div[id^='myModal']").each(function(){
+  
+  var currentModal = $(this);
+  
+  //click next
+  currentModal.find('.btn-next').click(function(){
+    currentModal.modal('hide');
+    currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show'); 
+  });
+  
+  //click prev
+  currentModal.find('.btn-prev').click(function(){
+    currentModal.modal('hide');
+    currentModal.closest("div[id^='myModal']").prevAll("div[id^='myModal']").first().modal('show'); 
+  });
+
+});
+</script>
 </body>
 </html>
