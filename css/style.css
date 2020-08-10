@@ -92,31 +92,13 @@ h2{
 li + p{
 	margin-top:10px!important;
 }
-.collection-img{
-	cursor: pointer;
-	border-radius: 2px;
-	display: inline-block;
-	width: 230px;
-	margin-bottom: 20px;
-	margin-right: 10px;
-	background: white;
-	position: relative;
-	color: #424651!important;
-	border: 1px solid #eee;
-}
 .collection-img:hover{
 	transition-duration: 0.3s;
 	-webkit-transition-duration:0.3s;
 	-ms-transition-duration: 0.3s;
 	box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
-.collection-images .collection-div{
-	height: 160px;
-	margin-top: 0;
-	border-radius: 4px;
-	overflow:hidden;
-	border: 4px solid #fff;
-}
+
 .collection-div span{
 	color: #8f8f8f;
 	font-size: 13px;
@@ -156,6 +138,40 @@ li + p{
 	margin-left: 20px;
 	color: #F25968;
 }
+.collection-images .collection-div{
+	height: 0;
+	margin-top: 0;
+	border-radius: 4px;
+	overflow:hidden;
+	border: 4px solid #fff;
+	padding-bottom:67%;	
+}
+.collection-img{
+cursor: pointer;
+border-radius: 2px;
+display: inline-block;
+margin-bottom: 20px;
+margin-right: 10px;
+background: white;
+position: relative;
+color: #424651!important;
+border: 1px solid #eee;
+}
+@media(min-width: 1200px){
+	.collection-img{
+	width: 22%;
+	}
+}
+@media(max-width: 1200px){
+	.collection-img{
+	width: 30%;
+	}
+}
+@media(min-width: 1800px){
+	.collection-img{
+	width: 18%;
+	}
+}
 @media(min-width: 992px){
 	.navbar-expand-lg{
 		width: 250px;
@@ -184,9 +200,6 @@ li + p{
 		font-weight: 500;
 		font-size: 16px;
 		background: #F5F3F8;
-	}
-	.nav a{
-		margin-bottom: 10px;
 	}
 	.circle{
 		width: 70px;
@@ -238,26 +251,36 @@ li + p{
 	.modal-dialog{
 		max-width: 900px;
 	}
+	.navbar-toggler{
+		display: none;
+	}
 }
 @media(max-width: 991.98px){
 	.content{
 		margin: 40px 30px;
 	}
-	.nav a{
+/*	.nav a{
 		max-width: 150px;
 		text-align: center;
-	}
+	}*/
 	.li-text{
 		margin-left: 0px;
 	}
-	.nav{
+/*	.nav{
 		-ms-flex-pack: center !important;
     	justify-content: center !important;
-  	}
-	.nav-tab2 .nav-link.active,
+  	}*/
+/*	.nav-tab2 .nav-link.active,
 	.nav-tab2 .nav-item.show .nav-link {
 		border-bottom: 4px solid #F25968!important;
 		font-weight: 500;
+	}*/
+	.nav{
+		display: block;
+	}
+	.nav a{
+		padding-left: 20px;
+		width: 100%;
 	}
 	.contact-me{
 		display: none;
@@ -289,10 +312,10 @@ li + p{
 	}
 }
 @media(min-width: 576px) and (max-width: 991.98px){
-	.nav a{
+/*	.nav a{
 		max-width: 180px;
 		text-align: center;
-	}
+	}*/
 	.photo{
 		float: left;
 	}
@@ -353,4 +376,16 @@ li + p{
 }
 .modal{
 	background: rgba(0,0,0,0.7);
+}
+.navbar-toggler{
+	margin: 10px 20px;
+}
+.navbar-toggler:hover{
+	transition-duration: 0.3s;
+	-webkit-transition-duration:0.3s;
+	-ms-transition-duration: 0.3s;
+	transform: scale(1.1);
+}
+.navbar-toggler:focus{
+	outline: none;
 }

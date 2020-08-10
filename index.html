@@ -10,21 +10,32 @@
 <body>
   <!-- navbar -->
     <nav class="navbar-expand-lg navbar-light">
-          <img src="image/me.png" class="circle">
-        <p>Nicole Lin<br><span class="job-title">UI/UX Designer</span></p>
+        <img src="image/me.png" class="circle">
+        <p>Nicole Lin
+          <br>
+          <span class="job-title">UI/UX Designer</span>
+        </p>
         <a href="mailto:vup0118@gmail.com">
-        <button class="contact-me">CONTACT ME</button></a>
-      	<ul class="nav nav-tab2" id="myTab">
-          <li>
-            <a class="nav-item nav-link" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false"><span class="li-text">ABOUT ME</span></a>
-          </li>
-          <li class="">
-            <a class="nav-link nav-item" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false"><span class="li-text">EXPERIENCE</span></a>
-          </li>
-          <li class="">
-            <a class="nav-link nav-item active" data-toggle="tab" href="#collection" role="tab" aria-controls="collection" aria-selected="true"><span class="li-text">WORK COLLECTIONS</span></a>
-          </li>
-        </ul>
+          <button class="contact-me">CONTACT ME</button>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        	<ul class="nav nav-tab2" id="myTab">
+            <li>
+              <a class="nav-item nav-link" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false"><span class="li-text">ABOUT ME</span></a>
+            </li>
+            <li class="">
+              <a class="nav-link nav-item" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false"><span class="li-text">EXPERIENCE</span></a>
+            </li>
+            <li class="">
+              <a class="nav-link nav-item active" data-toggle="tab" href="#collection" role="tab" aria-controls="collection" aria-selected="true">
+                <span class="li-text">WORK COLLECTIONS</span>
+              </a>
+            </li>
+          </ul>
+        </div>
     </nav>
   <!-- Tab panes -->
     <div class="tab-content main">
@@ -57,6 +68,8 @@
               <img src="image/illustrator.png" class="skill-img">
               <img src="image/zeplin.png" class="skill-img">
               <img src="image/invision.png" class="skill-img">
+              <img src="image/overflow.png" class="skill-img">
+              <img src="image/sublime.png" class="skill-img">
             </div>
         </div>
         <!-- Second Tab -->
@@ -698,6 +711,15 @@
     currentModal.closest("div[id^='myModal']").prevAll("div[id^='myModal']").first().modal('show'); 
   });
 
+});
+</script>
+<script>
+$(function(){
+$('.nav a').on('click', function(){
+  if($(window).width()<992){ //當視窗小於480時才運作
+    $('.navbar-toggler').click();
+    }
+  });
 });
 </script>
 </body>
