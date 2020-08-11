@@ -24,7 +24,7 @@ a:hover{
 	font-size: 14px;
 }
 .li-text{
-	color: #9187A1;
+	color: #958CA1;
 }
 .active .li-text{
 	color: #654D88;
@@ -318,6 +318,11 @@ border: 1px solid #eee;
 		float: left;
 		display: block;
 		margin-left: 0px;
+	}
+}
+@media(max-width: 575.98px){
+	.collection-img{
+	width: 45%;
 	}
 }
 @media(min-width: 576px) and (max-width: 991.98px){
