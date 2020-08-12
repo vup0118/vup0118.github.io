@@ -1,6 +1,6 @@
 body{
 	color: #4C5270!important;
-	font-size: 14px;
+	font-size: 13px;
 	font-family: arial;
 	background: #f7f8f9;
 }
@@ -40,7 +40,7 @@ a:hover{
 	padding: 0;
 }
 h1{
-	font-size: 19px;
+	font-size: 18px;
 	margin-bottom: 20px;
 	font-weight: 600;
 	opacity: 0.4;
@@ -55,7 +55,7 @@ h1{
 	float: left;
 }
 h2{
-	font-size: 16px;
+	font-size: 15px;
 }
 .title{
 	float: left;
@@ -92,7 +92,7 @@ h2{
 	margin: 25px 20px auto auto;
 }
 .li-list{
-	margin:5px auto auto 25px;
+	margin:5px auto auto 18px;
 }
 .ex-div{
 	margin-top: 10px;
@@ -263,6 +263,9 @@ border: 1px solid #eee;
 	.navbar-toggler{
 		display: none;
 	}
+	.navbar-title{
+		display: none;
+	}
 }
 @media(max-width: 991.98px){
 	.content{
@@ -302,10 +305,12 @@ border: 1px solid #eee;
 		top: 0;
 		width: 100%;
 		z-index: 100;
+		min-width: 320px;		
 	}
 	.main{
 		position: absolute;
 		top:50px;
+		min-width: 320px;
 	}
 	.circle{
 		display: none;
@@ -392,7 +397,7 @@ border: 1px solid #eee;
 	background: rgba(0,0,0,0.7);
 }
 .navbar-toggler{
-	margin: 10px 20px;
+	margin: 10px 10px 10px 20px;
 }
 .navbar-toggler:hover{
 	transition-duration: 0.3s;
