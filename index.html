@@ -25,13 +25,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         	<ul class="nav nav-tab2" id="myTab">
             <li>
-              <a class="nav-item nav-link" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false"><span class="li-text">ABOUT ME</span></a>
+              <a class="nav-item nav-link active" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true"><span class="li-text">ABOUT ME</span></a>
             </li>
             <li class="">
               <a class="nav-link nav-item" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false"><span class="li-text">EXPERIENCE</span></a>
             </li>
             <li class="">
-              <a class="nav-link nav-item active" data-toggle="tab" href="#collection" role="tab" aria-controls="collection" aria-selected="true">
+              <a class="nav-link nav-item" data-toggle="tab" href="#collection" role="tab" aria-controls="collection" aria-selected="false">
                 <span class="li-text">WORK COLLECTIONS</span>
               </a>
             </li>
@@ -41,11 +41,11 @@
   <!-- Tab panes -->
     <div class="tab-content main">
       <!-- First Tab -->
-        <div class="tab-pane content show" id="about" role="tabpanel" aria-labelledby="about-tab">
+        <div class="tab-pane content show in active" id="about" role="tabpanel" aria-labelledby="about-tab">
             <h1>ABOUT ME</h1>
-<!--             <div class="photo">
-              <img src="image/me.jpg">
-            </div> -->
+            <div class="photo">
+              <img src="image/me.png">
+            </div>
             <div class="name-info">
               <p>姓名: 林婷馨(Nicole Lin)</p>
               <p>生日: 1993/01/18 (27歲)</p>
@@ -98,7 +98,8 @@
               <div class="block-text"><h2>MAYO Human capital Inc.</h2></div>
             </div>
             <div class="skill-content ex-div">
-              <li>2017.04 - 2017.10<span>UI / UX Designer</span></li>
+              <li>2017.04 - 2017.10</li>
+              <p class="li-list">UI / UX Designer</p>
               <p class="li-list">- iOS、Android APP介面設計。</p>
               <p class="li-list">- 人力資源平台設計。</p>
               <p class="li-list">- 公司CI設計。</p>
@@ -108,18 +109,21 @@
               <div class="block-text"><h2>Polstar Technology Inc.</h2></div>
             </div>
             <div class="skill-content ex-div">
-              <li>2015.07 - 2017.04<span>UI / UX Designer</span></li>
+              <li>2015.07 - 2017.04</li>
+              <p class="li-list">UI / UX Designer</p>
               <p class="li-list">- iOS、Android APP介面設計。</p>
               <p class="li-list">- 車用導航介面設計。</p>
               <p class="li-list">- RWD活動網頁製作、軟體更新網頁製作。</p>
               <p class="li-list">- Banner、海報、DM、節慶卡片等視覺設計。</p>
-              <li class="ex-div">2017.04 - 2018.03<span>UI / UX Designer(外包接案)</span></li>
+              <li class="ex-div">2017.04 - 2018.03</li>
+              <p class="li-list">UI外包接案</p>
               <p class="li-list">- 車用導航介面設計。</p>
               <p class="li-list">- 軟體更新網頁製作。</p>
             </div>
         
         </div>
-        <div class="tab-pane content show in active" id="collection" role="tabpanel" aria-labelledby="collection-tab">
+        <!-- third tab -->
+        <div class="tab-pane content show" id="collection" role="tabpanel" aria-labelledby="collection-tab">
             <h1>WORK COLLECTIONS</h1>
             <!-- Desktop ui -->
             <div class="title">
