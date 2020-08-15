@@ -175,7 +175,10 @@ border: 1px solid #eee;
 	font-size: 14px;
 	background: #F5F3F8;
 }
-
+.li-list.job-title{
+	color: #4C95EF;
+	opacity: 1;
+}
 
 /*//////////////////////*/
 @media(min-width: 1200px){
