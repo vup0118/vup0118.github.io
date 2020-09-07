@@ -3,6 +3,7 @@ body{
 	font-size: 13px;
 	font-family: arial;
 	background: #f7f8f9;
+	line-height: 2;
 }
 a{
 	cursor: pointer;
@@ -89,10 +90,10 @@ h2{
 .skill-img{
 	width: 64px;
 	height: 64px;
-	margin: 25px 20px auto auto;
+	margin: 25px 15px auto auto;
 }
 .li-list{
-	margin:5px auto auto 18px;
+	margin:0 auto auto 18px;
 }
 .ex-div{
 	margin-top: 10px;
@@ -241,6 +242,7 @@ border: 1px solid #eee;
 		border-radius: 4px;
 		cursor: pointer;
 		font-size: 13px;
+		line-height: 1;
 	}
 	.contact-me:hover{
 		transition-duration: 0.3s;
